@@ -25,6 +25,7 @@ namespace _Project.Scripts.Items
         
         public override void Utilizar(Inventario inventario)
         {
+            base.Utilizar(inventario);
             if (DistanciaHastaComponente < 2f)
             {
                 Destroy(TrampaMasCercana().gameObject);

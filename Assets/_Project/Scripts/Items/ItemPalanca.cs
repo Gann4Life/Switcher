@@ -15,6 +15,7 @@ public class ItemPalanca : Item
     
     public override void Utilizar(Inventario inventario)
     {
+        base.Utilizar(inventario);
         if (DistanciaHastaComponente < 1.25f)
         {
             if (componenteAActivar.Encendido)

@@ -183,8 +183,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sfxPresionarEncender: {fileID: 0}
   sfxPresionarApagar: {fileID: 0}
-  sfxEncendido: {fileID: 8300000, guid: 81a5434532fad6a408ee3151d00e5881, type: 3}
-  sfxApagado: {fileID: 8300000, guid: 10cda394e7df03240abf7bf355ec9dd6, type: 3}
+  sfxEncendido: {fileID: 8300000, guid: 0cc10cac16eb5d1468a037639ada4d5b, type: 3}
+  sfxApagado: {fileID: 8300000, guid: 66d72d6350db9244daeefb41669419b5, type: 3}
 --- !u!82 &7970950163419245608
 AudioSource:
   m_ObjectHideFlags: 0

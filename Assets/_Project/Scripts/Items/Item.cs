@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class Item : MonoBehaviour
 {
-    public event Action OnUtilizar;
+    public event Action<Item> OnUtilizar;
     
     [Header("Sonido")] [SerializeField] private AudioClip sfxPickup;
     [SerializeField] private AudioClip sfxDrop;
@@ -60,7 +60,7 @@ public class Item : MonoBehaviour
 
     public virtual void Utilizar(Inventario inventario)
     {
-        OnUtilizar?.Invoke();
+        OnUtilizar?.Invoke(this);
     }
     
     private void Start()

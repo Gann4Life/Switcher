@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   encendidoPorDefecto: 0
+  habilitadoPorDefecto: 1
   invertir: 0
   delayEncender: 0.1
   delayApagar: 0.1

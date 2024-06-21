@@ -70,7 +70,6 @@ namespace Componentes
         {
             base.Start();
             Encender(interruptor.Encendido);
-            Debug.Log("FOR GODS SAKE!!!, I MUST BE " + interruptor.Encendido);
         }
 
         private void OnDrawGizmos()

@@ -26,7 +26,9 @@ namespace Componentes
     
         private void RecibirConexion(object sender, EventArgs eventArgs)
         {
-            Encender(A.Encendido && B.Encendido);
+            bool resultado = A.Encendido && B.Encendido;
+            if (Encendido == resultado) return;
+            Encender(resultado);
         }
         
         #if UNITY_EDITOR

@@ -69,7 +69,8 @@ namespace Componentes
         protected override void Start()
         {
             base.Start();
-            Encender(interruptor.Encendido);
+            if(interruptor) Encender(interruptor.Encendido);
+            else Encender(encendidoPorDefecto);
         }
 
         private void OnDrawGizmos()

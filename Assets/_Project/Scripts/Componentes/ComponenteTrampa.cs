@@ -15,14 +15,21 @@ namespace Componentes
 
         private void OnEnable()
         {
-            interruptor.OnEncender += (sender, args) => EstadoEncendido();
-            interruptor.OnApagar += (sender, args) => EstadoApagado();
+            interruptor.OnEncender += (sender, args) => Encender(interruptor.Encendido);
+            interruptor.OnApagar += (sender, args) => Encender(interruptor.Encendido);
         }
 
         private void Awake()
         {
             _collider = GetComponent<Collider2D>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        protected override void Start()
+        {
+            base.Start();
+            if(interruptor) Encender(interruptor.Encendido);
+            else Encender(encendidoPorDefecto);
         }
 
         protected override void EstadoEncendido()

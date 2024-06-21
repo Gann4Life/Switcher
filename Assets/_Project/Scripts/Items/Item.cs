@@ -7,8 +7,13 @@ using DG.Tweening;
 public class Item : MonoBehaviour
 {
     public event Action<Item> OnUtilizar;
+
+    [Header("Configuración")] 
+    [SerializeField] private Vector2 desplazamiento = new Vector2(0.5f, 0.5f);
+    [SerializeField] private bool usarRotacionDelJugador = false;
     
-    [Header("Sonido")] [SerializeField] private AudioClip sfxPickup;
+    [Header("Sonido")] 
+    [SerializeField] private AudioClip sfxPickup;
     [SerializeField] private AudioClip sfxDrop;
 
     public ControlJugador Jugador { get; private set; }
@@ -72,7 +77,15 @@ public class Item : MonoBehaviour
     private void Update()
     {
         if (EstaSiendoUsado())
-            transform.position = Vector2.Lerp(transform.position, (Vector2)Jugador.transform.position + new Vector2(0.5f, 0.5f), Time.deltaTime*10);
+        {
+            transform.position = Vector2.Lerp(transform.position,
+                (Vector2)Jugador.transform.position + desplazamiento, Time.deltaTime * 10);
+            
+            if (usarRotacionDelJugador && Jugador.DireccionAMover != Vector2.zero)
+            {
+                transform.up = Vector2.Lerp(transform.up, Jugador.DireccionAMover, Time.deltaTime * 10);
+            }
+        }
         else
             HoveringEffect();
     }

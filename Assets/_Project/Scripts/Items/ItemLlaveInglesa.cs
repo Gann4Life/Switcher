@@ -32,6 +32,7 @@ public class ItemLlaveInglesa : Item
 
     private void OnDrawGizmosSelected()
     {
+        if (!componenteAActivar) return;
         Gizmos.DrawLine(transform.position, componenteAActivar.transform.position);
     }
 }

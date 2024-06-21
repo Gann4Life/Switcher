@@ -80,14 +80,15 @@ public class Item : MonoBehaviour
         {
             transform.position = Vector2.Lerp(transform.position,
                 (Vector2)Jugador.transform.position + desplazamiento, Time.deltaTime * 10);
-            
-            if (usarRotacionDelJugador && Jugador.DireccionAMover != Vector2.zero)
-            {
-                transform.up = Vector2.Lerp(transform.up, Jugador.DireccionAMover, Time.deltaTime * 10);
-            }
+            UsarRotacionDelJugador();
         }
-        else
-            HoveringEffect();
+        else HoveringEffect();
+    }
+
+    private void UsarRotacionDelJugador()
+    {
+        if (usarRotacionDelJugador && Jugador.DireccionAMover != Vector2.zero)
+            transform.up = Vector2.Lerp(transform.up, Jugador.DireccionAMover, Time.deltaTime * 10);
     }
 
     private void HoveringEffect()

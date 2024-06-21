@@ -61,7 +61,7 @@ public class ControlJugador : MonoBehaviour, IDamageable
     /// El segundo argumento es el eje Y, las direcciones arriba y abajo. El movimiento hacia abajo siempre es negativo.
     /// Se normaliza el resultado de dirección para que la velocidad no sea mayor cuando se mueva en diagonal por ejemplo.
     /// </summary>
-    private Vector2 DireccionAMover => new Vector2(-Izquierda + Derecha, Arriba - Abajo).normalized;
+    public Vector2 DireccionAMover => new Vector2(-Izquierda + Derecha, Arriba - Abajo).normalized;
 
     public void Revivir() => _vidas = vidaMaxima;
     

@@ -12,6 +12,7 @@ namespace Componentes
 
         [Header("Configuración")] 
         [SerializeField] protected bool encendidoPorDefecto = false;
+        [SerializeField] protected bool habilitadoPorDefecto = true;
 
         [SerializeField] protected bool invertir = false;
         [SerializeField] protected float delayEncender = 0.3f;
@@ -19,7 +20,7 @@ namespace Componentes
 
         public bool Encendido => invertir ? !_encendido : _encendido;
 
-        public bool Habilitado { get; private set; } = true;
+        public bool Habilitado { get; private set; }
 
         private bool _encendido;
 
@@ -60,6 +61,7 @@ namespace Componentes
         private void Start()
         {
             Encender(encendidoPorDefecto);
+            Habilitar(habilitadoPorDefecto);
         }
     }
 }

@@ -72,5 +72,12 @@ namespace Componentes
             Encender(interruptor.Encendido);
             Debug.Log("FOR GODS SAKE!!!, I MUST BE " + interruptor.Encendido);
         }
+
+        private void OnDrawGizmos()
+        {
+            if (!interruptor) return;
+            Gizmos.color = Color.cyan;
+            Gizmos.DrawLine(transform.position, interruptor.transform.position);
+        }
     }
 }

@@ -122,6 +122,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 1170919044036431753, guid: 347ab964112322f4fa10341063be1f3e, type: 3}
+      propertyPath: interruptor
+      value: 
+      objectReference: {fileID: 427818160130509420}
     - target: {fileID: 3978509395502764836, guid: 347ab964112322f4fa10341063be1f3e, type: 3}
       propertyPath: m_Name
       value: Lampara
@@ -173,7 +177,7 @@ PrefabInstance:
     - target: {fileID: 6128080190124883669, guid: 347ab964112322f4fa10341063be1f3e, type: 3}
       propertyPath: interruptorAValidar
       value: 
-      objectReference: {fileID: 427818160130509420}
+      objectReference: {fileID: 7228741130237170279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -184,3 +188,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4291979833831988590, guid: 347ab964112322f4fa10341063be1f3e, type: 3}
   m_PrefabInstance: {fileID: 8389737063578263022}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7228741130237170279 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1170919044036431753, guid: 347ab964112322f4fa10341063be1f3e, type: 3}
+  m_PrefabInstance: {fileID: 8389737063578263022}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26b8109ecd949468d5d03e2f6145b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

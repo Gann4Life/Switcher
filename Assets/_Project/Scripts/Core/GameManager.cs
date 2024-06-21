@@ -120,4 +120,10 @@ public class GameManager : MonoBehaviour
         else if (Instance != this)
             Destroy(gameObject);
     }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+            ReiniciarEscena();
+    }
 }

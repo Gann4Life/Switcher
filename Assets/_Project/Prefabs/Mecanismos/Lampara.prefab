@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 603510872638270331}
   - component: {fileID: 686501318804796074}
-  - component: {fileID: 5567403121970933690}
   m_Layer: 0
   m_Name: Light 2D
   m_TagString: Untagged
@@ -83,22 +82,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &5567403121970933690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3871456410294348295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e26b8109ecd949468d5d03e2f6145b50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  detectarAlPresionar: 1
-  detectarAlEncender: 0
-  detectarAlApagar: 0
-  interruptor: {fileID: 0}
 --- !u!1 &3978509395502764836
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,6 +93,7 @@ GameObject:
   - component: {fileID: 4291979833831988590}
   - component: {fileID: 4723734185830174224}
   - component: {fileID: 6128080190124883669}
+  - component: {fileID: 1170919044036431753}
   m_Layer: 0
   m_Name: Lampara
   m_TagString: Untagged
@@ -172,7 +156,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1107530065
-  m_SortingLayer: 5
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -135731833, guid: 23221280e97be854cac05d8e1769bc53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -202,4 +186,25 @@ MonoBehaviour:
   detectarAlPresionar: 1
   detectarAlEncender: 0
   detectarAlApagar: 0
-  interruptorAValidar: {fileID: 0}
+  interruptorAValidar: {fileID: 1170919044036431753}
+--- !u!114 &1170919044036431753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978509395502764836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e26b8109ecd949468d5d03e2f6145b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  encendidoPorDefecto: 0
+  habilitadoPorDefecto: 1
+  invertir: 0
+  delayEncender: 0
+  delayApagar: 0
+  detectarAlPresionar: 1
+  detectarAlEncender: 0
+  detectarAlApagar: 0
+  interruptor: {fileID: 0}

@@ -11,5 +11,11 @@ namespace Componentes
         {
             
         }
+
+        protected override void Start()
+        {
+            base.Start();
+            Encender(encendidoPorDefecto);
+        }
     }
 }

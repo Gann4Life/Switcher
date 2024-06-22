@@ -1,12 +1,7 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using Componentes;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using Random = System.Random;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D), typeof(Animator))]
 public class ControlJugador : MonoBehaviour, IDamageable

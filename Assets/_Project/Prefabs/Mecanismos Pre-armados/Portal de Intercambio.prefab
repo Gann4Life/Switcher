@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 548378987184570172}
   m_Layer: 0
-  m_Name: "T\xFAnel de Intercambio"
+  m_Name: Portal de Intercambio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 522467899527471354, guid: 3b8459fc2ff89d147952cfea2a5b3dcf, type: 3}
       propertyPath: m_Name
-      value: Teleport B
+      value: Portal B
       objectReference: {fileID: 0}
     - target: {fileID: 6799859384014640267, guid: 3b8459fc2ff89d147952cfea2a5b3dcf, type: 3}
       propertyPath: teleporterAsociado
@@ -120,7 +120,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 522467899527471354, guid: 3b8459fc2ff89d147952cfea2a5b3dcf, type: 3}
       propertyPath: m_Name
-      value: Teleport A
+      value: Portal A
       objectReference: {fileID: 0}
     - target: {fileID: 6799859384014640267, guid: 3b8459fc2ff89d147952cfea2a5b3dcf, type: 3}
       propertyPath: teleporterAsociado

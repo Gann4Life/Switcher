@@ -112,6 +112,11 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public static void CargarEscenaPorNombre(string nombre)
+    {
+        SceneManager.LoadScene(nombre);
+    }
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);

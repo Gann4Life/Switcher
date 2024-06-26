@@ -14,4 +14,5 @@ public class GameManagerTriggerer : MonoBehaviour
     public void MenuPrincipal() => GameManager.IrAlMenuPrincipal();
     public void SalirDelJuego() => GameManager.CerrarJuego();
     public void Reiniciar() => GameManager.ReiniciarEscena();
+    public void CargarEscena(string nombre) => GameManager.CargarEscenaPorNombre(nombre);
 }

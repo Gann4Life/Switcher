@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6799859384014640267}
   - component: {fileID: 375323111725273914}
   m_Layer: 0
-  m_Name: Teleport
+  m_Name: Portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

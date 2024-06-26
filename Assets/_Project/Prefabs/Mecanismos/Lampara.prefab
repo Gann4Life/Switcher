@@ -92,8 +92,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4291979833831988590}
   - component: {fileID: 4723734185830174224}
-  - component: {fileID: 6128080190124883669}
   - component: {fileID: 1170919044036431753}
+  - component: {fileID: 6128080190124883669}
   m_Layer: 0
   m_Name: Lampara
   m_TagString: Untagged
@@ -169,24 +169,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6128080190124883669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3978509395502764836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfb0533a0b8b0b4499160bcb05ae42b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteActivo: {fileID: 2023347591, guid: 23221280e97be854cac05d8e1769bc53, type: 3}
-  spriteApagado: {fileID: -135731833, guid: 23221280e97be854cac05d8e1769bc53, type: 3}
-  detectarAlPresionar: 1
-  detectarAlEncender: 0
-  detectarAlApagar: 0
-  interruptorAValidar: {fileID: 1170919044036431753}
 --- !u!114 &1170919044036431753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -208,3 +190,21 @@ MonoBehaviour:
   detectarAlEncender: 0
   detectarAlApagar: 0
   interruptor: {fileID: 0}
+--- !u!114 &6128080190124883669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3978509395502764836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfb0533a0b8b0b4499160bcb05ae42b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteActivo: {fileID: 2023347591, guid: 23221280e97be854cac05d8e1769bc53, type: 3}
+  spriteApagado: {fileID: -135731833, guid: 23221280e97be854cac05d8e1769bc53, type: 3}
+  detectarAlPresionar: 1
+  detectarAlEncender: 0
+  detectarAlApagar: 0
+  interruptorAValidar: {fileID: 1170919044036431753}

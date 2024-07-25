@@ -8,5 +8,5 @@ Estética PixelArt en Blanco y Negro
 Resolución de Puzzles
 Tintes de Horror y Suspenso
 
-Proyecto realizado para la materia “Introducción a los Videojuegos” en [https://unahur.edu.ar](UNAHUR).
+Proyecto realizado para la materia “Introducción a los Videojuegos” en [UNAHUR](https://unahur.edu.ar).
 

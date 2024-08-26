@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3629cf427559456aab2b637a11565b9d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - itemAValidar: {instanceID: 0}
+  - sfxValido: {fileID: 8300000, guid: a8333232f07453e48b75c91c6459b2d6, type: 3}
+  - sfxError: {fileID: 8300000, guid: 10cda394e7df03240abf7bf355ec9dd6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

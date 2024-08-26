@@ -1,4 +1,5 @@
 public interface IUsable
 {
-    void Usar();
+    void Usar(ControlJugador usuario);
+    void DejarDeUsar(ControlJugador usuario);
 }
